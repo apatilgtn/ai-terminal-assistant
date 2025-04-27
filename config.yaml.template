@@ -1,1 +1,27 @@
-config.yaml.template
+# AI Terminal Assistant Configuration
+
+# Choose your API provider: "anthropic" or "openai" (openai not fully implemented yet)
+api_provider: "anthropic"
+
+# --- Anthropic Settings ---
+anthropic:
+  # REQUIRED: Get your API key from https://console.anthropic.com/
+  api_key: "YOUR_ANTHROPIC_API_KEY_HERE"
+  # Model selection (e.g., claude-3-opus-20240229, claude-3-sonnet-20240229, claude-3-haiku-20240307)
+  model: "claude-3-sonnet-20240229" # Or your preferred Claude model
+  max_tokens: 500 # Max tokens for the AI response
+  temperature: 0.5 # Controls randomness (0=deterministic, 1=more random)
+
+# --- OpenAI Settings (Placeholder) ---
+openai:
+  api_key: "YOUR_OPENAI_API_KEY_HERE" # (Not used if api_provider is not openai)
+  model: "gpt-4o"
+  max_tokens: 500
+  temperature: 0.5
+
+# --- Features ---
+# Automatically attempt to explain and fix errors when a command fails (non-zero exit code)
+auto_fix_errors: true # Set to false to disable automatic fixing (manual 'ai fix' still works)
+
+# Set to true to see debug messages in the terminal
+debug_mode: false
