@@ -2,9 +2,7 @@
 
 A lightweight AI-powered assistant for your macOS terminal (initially focused on Zsh), inspired by Warp's AI features. Get help fixing command errors, ask questions about shell commands, and interact with an AI directly within your existing terminal workflow.
 
-![AI Terminal Assistant Demo](https://user-images.githubusercontent.com/12345/example-image-placeholder.png)
-<!-- Replace the above placeholder URL with an actual screenshot or GIF of the assistant in action! -->
-<!-- You can use the original image you provided initially, or create a new one showing a chat or fix interaction -->
+
 
 ## 🚀 What This Project Does
 
